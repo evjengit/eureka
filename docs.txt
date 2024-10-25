@@ -1,0 +1,2 @@
+Har brukt stable diffusion ai online: https://stabledifffusion.com/tools/ai-image-generator
+for å generere logoen til nettsiden med promptet: A logo with the text "Eureka"

@@ -4,6 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const setFavicon = (url: string) => {
+  let link: HTMLLinkElement | null = document.querySelector("link[rel*='icon']");
+  if (!link) {
+    link = document.createElement('link');
+    link.rel = 'icon';
+    document.head.appendChild(link);
+  }
+  link.href = url;
+};
+
+setFavicon('/favicon.ico');
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
